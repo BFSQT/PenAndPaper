@@ -150,7 +150,7 @@ namespace Project_r_layeh
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "",
+            "<brak>",
             "k2",
             "k4",
             "k6",
@@ -168,17 +168,34 @@ namespace Project_r_layeh
             // 
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
-            "",
-            "WW",
-            "US",
-            "Otwieranie zamków",
-            "Spostrzegawczość",
+            "Charakterystyka",
+            "Dowodzenie",
+            "Hazard",
+            "Jeżdziectwo",
+            "Mocna głowa",
+            "Opieka nad zwierzętami",
+            "Plotkowanie",
+            "Pływanie",
+            "Powożenie",
             "Przekonywanie",
-            "Pływanie"});
+            "Przeszukiwanie",
+            "Skradanie się",
+            "Spostrzegawczość",
+            "Sztuka przetrwania",
+            "Targowanie",
+            "Ukrywanie się",
+            "Wioślarstwo",
+            "Wspinaczka",
+            "Wycena",
+            "Zastraszanie",
+            "Walka Wręcz",
+            "Umiejętności Strzeleckie",
+            "<Brak>"});
             this.comboBox2.Location = new System.Drawing.Point(12, 83);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(210, 21);
             this.comboBox2.TabIndex = 17;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // label4
             // 

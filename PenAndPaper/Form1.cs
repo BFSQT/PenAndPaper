@@ -12,13 +12,16 @@ namespace Project_r_layeh
 {
     public partial class Form1 : Form
     {
+        gracz Roman = new gracz();
         int Wynik = 0;
         int currentMyComboBoxIndex=0;
+        int currentMyComboBoxIndex2 = 0;
         public Form1()
         {
             InitializeComponent();
 
         }
+        
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -205,6 +208,7 @@ namespace Project_r_layeh
 
         private void button3_Click(object sender, EventArgs e)
         {
+            int Statystyka = 0;
             Random rand = new Random();
             if (currentMyComboBoxIndex == 0)
             {
@@ -238,15 +242,46 @@ namespace Project_r_layeh
             if (currentMyComboBoxIndex == 7)
             {
                 Wynik = rand.Next(1,101);
-
             }
+
+//##################### Wybieranie statystyki ##############################
+
+            if (currentMyComboBoxIndex2 == 21)
+            {
+                Statystyka = Roman.at_ww;
+            }
+            if (currentMyComboBoxIndex2 == 22)
+            {
+                Statystyka = Roman.at_us;
+            }
+            if (currentMyComboBoxIndex2 == 3)
+            {
+                Statystyka = Roman.at_zr;
+            }
+            if (currentMyComboBoxIndex2 == 3)
+            {
+                Statystyka = Roman.at_int;
+            }
+            if (currentMyComboBoxIndex2 == 1 || currentMyComboBoxIndex2 == 2)
+            {
+                Statystyka = Roman.at_ogd;
+            }
+            if (currentMyComboBoxIndex2 == 6 )
+            {
+                Statystyka = Roman.at_k;
+            }
+            if (currentMyComboBoxIndex2 == 7)
+            {
+                Statystyka = Roman.at_sw;
+            }
+
             if (checkBox1.Checked)
             {
-                Wynik +=20;
+                Wynik -=20;
             }
             if (checkBox2.Checked)
             {
-                Wynik += 10;
+                Wynik -= 10;
             }
             if (checkBox3.Checked)
             {
@@ -254,13 +289,21 @@ namespace Project_r_layeh
             }
             if (checkBox4.Checked)
             {
-                Wynik -= 10;
+                Wynik += 10;
             }
             if (checkBox5.Checked)
             {
-                Wynik -= 20;
+                Wynik += 20;
             }
-            MessageBox.Show("Wejszło albo nie " + Wynik.ToString());
+            if(Wynik > Statystyka)
+            {
+                MessageBox.Show("Nie Wejszło! Wynik to: " + Wynik.ToString());
+            }
+            if (Wynik <= Statystyka)
+            {
+                MessageBox.Show("Wejszło! Wynik to: " + Wynik.ToString());
+            }
+
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -272,10 +315,13 @@ namespace Project_r_layeh
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var Roman = new gracz(11,3,41,33,36,37,34,28,44);
-            MessageBox.Show(Roman.at_ww.ToString());
+            Roman.Ustaw_atrybuty("Roman", 11, 3, 41, 33, 36, 37, 34, 28, 44);
 
+        }
 
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentMyComboBoxIndex2 = comboBox2.SelectedIndex;
         }
     }
 }
