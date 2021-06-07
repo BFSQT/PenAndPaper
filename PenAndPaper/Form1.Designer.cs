@@ -40,23 +40,26 @@ namespace Project_r_layeh
             this.label3 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button3.Location = new System.Drawing.Point(12, 311);
+            this.button3.Location = new System.Drawing.Point(16, 377);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(155, 51);
             this.button3.TabIndex = 4;
             this.button3.Text = "Rzuć ";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(12, 129);
+            this.label1.Location = new System.Drawing.Point(8, 190);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(276, 24);
             this.label1.TabIndex = 6;
@@ -66,7 +69,7 @@ namespace Project_r_layeh
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.checkBox1.Location = new System.Drawing.Point(27, 156);
+            this.checkBox1.Location = new System.Drawing.Point(23, 217);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(195, 24);
             this.checkBox1.TabIndex = 7;
@@ -78,7 +81,7 @@ namespace Project_r_layeh
             // 
             this.checkBox2.AutoSize = true;
             this.checkBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.checkBox2.Location = new System.Drawing.Point(27, 186);
+            this.checkBox2.Location = new System.Drawing.Point(23, 247);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(148, 24);
             this.checkBox2.TabIndex = 8;
@@ -90,7 +93,7 @@ namespace Project_r_layeh
             // 
             this.checkBox3.AutoSize = true;
             this.checkBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.checkBox3.Location = new System.Drawing.Point(27, 216);
+            this.checkBox3.Location = new System.Drawing.Point(23, 277);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(164, 24);
             this.checkBox3.TabIndex = 9;
@@ -102,7 +105,7 @@ namespace Project_r_layeh
             // 
             this.checkBox4.AutoSize = true;
             this.checkBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.checkBox4.Location = new System.Drawing.Point(27, 246);
+            this.checkBox4.Location = new System.Drawing.Point(23, 307);
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.Size = new System.Drawing.Size(151, 24);
             this.checkBox4.TabIndex = 10;
@@ -114,7 +117,7 @@ namespace Project_r_layeh
             // 
             this.checkBox5.AutoSize = true;
             this.checkBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.checkBox5.Location = new System.Drawing.Point(27, 276);
+            this.checkBox5.Location = new System.Drawing.Point(23, 337);
             this.checkBox5.Name = "checkBox5";
             this.checkBox5.Size = new System.Drawing.Size(198, 24);
             this.checkBox5.TabIndex = 11;
@@ -128,9 +131,9 @@ namespace Project_r_layeh
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label2.Location = new System.Drawing.Point(12, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(129, 22);
+            this.label2.Size = new System.Drawing.Size(225, 22);
             this.label2.TabIndex = 14;
-            this.label2.Text = "Wybrana kość:";
+            this.label2.Text = "Jaką kością chcesz rzucić?";
             // 
             // label3
             // 
@@ -138,9 +141,9 @@ namespace Project_r_layeh
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label3.Location = new System.Drawing.Point(12, 58);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(172, 22);
+            this.label3.Size = new System.Drawing.Size(178, 22);
             this.label3.TabIndex = 15;
-            this.label3.Text = "Wybrana statystyka:";
+            this.label3.Text = "Na co chcesz rzucić?";
             // 
             // comboBox1
             // 
@@ -175,11 +178,38 @@ namespace Project_r_layeh
             this.comboBox2.Size = new System.Drawing.Size(210, 21);
             this.comboBox2.TabIndex = 17;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label4.Location = new System.Drawing.Point(12, 107);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(221, 22);
+            this.label4.TabIndex = 18;
+            this.label4.Text = "Kogo chcesz zaatakować?";
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
+            "",
+            "Sprytny goblin",
+            "Zwyczajny goblin",
+            "Czarny goblin",
+            "Przywódca goblinów",
+            "Goblin Wojownik"});
+            this.comboBox3.Location = new System.Drawing.Point(12, 132);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(210, 21);
+            this.comboBox3.TabIndex = 19;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(351, 431);
+            this.ClientSize = new System.Drawing.Size(296, 440);
+            this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label3);
@@ -211,6 +241,8 @@ namespace Project_r_layeh
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox comboBox3;
     }
 }
 
