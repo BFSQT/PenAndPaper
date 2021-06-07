@@ -9,8 +9,8 @@ namespace Project_r_layeh
     public class przeciwnik: postac
     {
         //statystyki - atrybuty
-        protected int at_ww { get; set; } //walka wrecz
-        protected int at_us { get; set; } //umiejetnosci strzeleckie
+        public int at_ww { get; protected set; } //walka wrecz
+        public int at_us { get; protected set; } //umiejetnosci strzeleckie
 
         //konstruktory
         public przeciwnik() : base()
