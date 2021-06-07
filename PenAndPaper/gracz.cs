@@ -45,7 +45,7 @@ namespace Project_r_layeh
         }
 
         //metody
-        public void Ustaw_atrybutry(string nz, int at1, int at2, int at3, int at4, int at5, int at6, int at7, int at8, int at9)
+        public void Ustaw_atrybuty(string nz, int at1, int at2, int at3, int at4, int at5, int at6, int at7, int at8, int at9)
         {
             nazwa = nz;
             at_zyw = at1;
