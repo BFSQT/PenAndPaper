@@ -67,7 +67,14 @@ namespace Project_r_layeh
 
         public void Startowe_umiejetnosci()
         {
+            Random rnd = new Random();
             
+        }
+
+        public int At_odp()
+        {
+            int temp = at_odp;
+            return temp;
         }
     }
 }
