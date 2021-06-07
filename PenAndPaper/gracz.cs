@@ -49,9 +49,10 @@ namespace Project_r_layeh
             }
         }
 
-        //metody
+        //metody gracza
         public void Ustaw_atrybuty(string nz, int at1, int at2, int at3, int at4, int at5, int at6, int at7, int at8, int at9, int at10)
         {
+            //ustawienie atrybutow dla stworzonego obiektu
             nazwa = nz;
             at_zyw = at1;
             at_s = at2;
@@ -67,13 +68,35 @@ namespace Project_r_layeh
 
         public void Startowe_umiejetnosci()
         {
+            //losowe przypisanie 3 umiejetnosci
             Random rnd = new Random();
-            
+            int um1 = rnd.Next(0, 19);
+            int um2 = rnd.Next(0, 19);
+            int um3 = rnd.Next(0, 19);
+
+            tab_umiejetnosci[um1] = 1;
+            tab_umiejetnosci[um2] = 1;
+            tab_umiejetnosci[um3] = 1;
         }
 
         public int At_odp()
         {
+            //pozyskanie wartosci atrybutu odp z klasy abstrakcyjnej
             int temp = at_odp;
+            return temp;
+        }
+
+        public int At_zyw()
+        {
+            //pozyskanie wartosci atrybutu zyw z klasy abstrakcyjnej
+            int temp = at_zyw;
+            return temp;
+        }
+
+        public int At_s()
+        {
+            //pozyskanie wartosci atrybutu s z klasy abstrakcyjnej
+            int temp = at_s;
             return temp;
         }
     }
