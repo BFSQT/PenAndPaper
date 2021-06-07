@@ -8,3 +8,13 @@ C:\Users\Lipski\source\repos\Project r'layeh\obj\Debug\Project r'layeh.csproj.Ge
 C:\Users\Lipski\source\repos\Project r'layeh\obj\Debug\Project r'layeh.csproj.CoreCompileInputs.cache
 C:\Users\Lipski\source\repos\Project r'layeh\obj\Debug\Project r'layeh.exe
 C:\Users\Lipski\source\repos\Project r'layeh\obj\Debug\Project r'layeh.pdb
+F:\1Studia ZUT\Semestr 4\IO\P&P\GitHub\PenAndPaper\PenAndPaper\bin\Debug\Project r'layeh.exe.config
+F:\1Studia ZUT\Semestr 4\IO\P&P\GitHub\PenAndPaper\PenAndPaper\bin\Debug\Project r'layeh.exe
+F:\1Studia ZUT\Semestr 4\IO\P&P\GitHub\PenAndPaper\PenAndPaper\bin\Debug\Project r'layeh.pdb
+F:\1Studia ZUT\Semestr 4\IO\P&P\GitHub\PenAndPaper\PenAndPaper\obj\Debug\Project r'layeh.csprojAssemblyReference.cache
+F:\1Studia ZUT\Semestr 4\IO\P&P\GitHub\PenAndPaper\PenAndPaper\obj\Debug\Project_r_layeh.Form1.resources
+F:\1Studia ZUT\Semestr 4\IO\P&P\GitHub\PenAndPaper\PenAndPaper\obj\Debug\Project_r_layeh.Properties.Resources.resources
+F:\1Studia ZUT\Semestr 4\IO\P&P\GitHub\PenAndPaper\PenAndPaper\obj\Debug\Project r'layeh.csproj.GenerateResource.cache
+F:\1Studia ZUT\Semestr 4\IO\P&P\GitHub\PenAndPaper\PenAndPaper\obj\Debug\Project r'layeh.csproj.CoreCompileInputs.cache
+F:\1Studia ZUT\Semestr 4\IO\P&P\GitHub\PenAndPaper\PenAndPaper\obj\Debug\Project r'layeh.exe
+F:\1Studia ZUT\Semestr 4\IO\P&P\GitHub\PenAndPaper\PenAndPaper\obj\Debug\Project r'layeh.pdb
