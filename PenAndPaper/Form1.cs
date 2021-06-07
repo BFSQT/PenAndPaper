@@ -12,6 +12,7 @@ namespace Project_r_layeh
 {
     public partial class Form1 : Form
     {
+        int Wynik = 0;
         public Form1()
         {
             InitializeComponent();
@@ -179,7 +180,26 @@ namespace Project_r_layeh
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            if (checkBox1.Checked)
+            {
+                Wynik = +20;
+            }
+            if (checkBox2.Checked)
+            {
+                Wynik = +10;
+            }
+            if (checkBox3.Checked)
+            {
+                Wynik = +0;
+            }
+            if (checkBox4.Checked)
+            {
+                Wynik = -10;
+            }
+            if (checkBox5.Checked)
+            {
+                Wynik = -20;
+            }
         }
     }
 }
