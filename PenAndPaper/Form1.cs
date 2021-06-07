@@ -269,5 +269,13 @@ namespace Project_r_layeh
             currentMyComboBoxIndex = comboBox1.SelectedIndex;
             
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var Roman = new gracz(11,3,41,33,36,37,34,28,44);
+            MessageBox.Show(Roman.at_ww.ToString());
+
+
+        }
     }
 }

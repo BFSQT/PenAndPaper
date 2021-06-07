@@ -9,7 +9,7 @@ namespace Project_r_layeh
     public class gracz: postac
     {
         //statystyki - atrybuty
-        protected int at_ww { get; set; } //walka wrecz
+        public int at_ww { get; set; } //walka wrecz
         protected int at_us { get; set;} //umiejetnosci strzeleckie
         protected int at_k { get; set; } //krzepa
         protected int at_zr { get; set; } //zrecznosc
