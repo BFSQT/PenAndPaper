@@ -214,34 +214,37 @@ namespace Project_r_layeh
             {
                 Wynik = rand.Next(0);
             }
-            if (currentMyComboBoxIndex == 1)
+            else if (currentMyComboBoxIndex == 1)
             {
-                Wynik = rand.Next(1,3);
+                Wynik = rand.Next(1, 3);
             }
-            if (currentMyComboBoxIndex == 2)
+            else if (currentMyComboBoxIndex == 2)
             {
-                Wynik = rand.Next(1,5);
-                
+                Wynik = rand.Next(1, 5);
             }
-            if (currentMyComboBoxIndex == 3)
+            else if (currentMyComboBoxIndex == 3)
             {
-                Wynik = rand.Next(1,7);
+                Wynik = rand.Next(1, 7);
             }
-            if (currentMyComboBoxIndex == 4)
+            else if (currentMyComboBoxIndex == 4)
             {
-                Wynik = rand.Next(1,11);
+                Wynik = rand.Next(1, 11);
             }
-            if (currentMyComboBoxIndex == 5)
+            else if (currentMyComboBoxIndex == 5)
             {
-                Wynik = rand.Next(1,21);
+                Wynik = rand.Next(1, 21);
             }
-            if (currentMyComboBoxIndex == 6)
+            else if (currentMyComboBoxIndex == 6)
             {
-                Wynik = rand.Next(1,51);
+                Wynik = rand.Next(1, 51);
             }
-            if (currentMyComboBoxIndex == 7)
+            else if (currentMyComboBoxIndex == 7)
             {
-                Wynik = rand.Next(1,101);
+                Wynik = rand.Next(1, 101);
+            }
+            else 
+            {
+                MessageBox.Show("Nie wybrałeś kości");
             }
 
 //##################### Wybieranie statystyki ##############################
@@ -283,6 +286,8 @@ namespace Project_r_layeh
                                                                                                                                                 
             }
 
+
+
             if (checkBox1.Checked)
             {
                 Wynik -=20;
@@ -303,13 +308,22 @@ namespace Project_r_layeh
             {
                 Wynik += 20;
             }
-            if(Wynik > Statystyka)
+            if (currentMyComboBoxIndex2 == 23)
+            {
+                MessageBox.Show("Wynik to: " + Wynik.ToString());
+
+            }
+            else if (Wynik > Statystyka)
             {
                 MessageBox.Show("Nie Wejszło! Wynik to: " + Wynik.ToString());
             }
-            if (Wynik <= Statystyka)
+            else if (Wynik <= Statystyka)
             {
                 MessageBox.Show("Wejszło! Wynik to: " + Wynik.ToString());
+            }
+            else 
+            {
+                MessageBox.Show("Wynik to: " + Wynik.ToString());
             }
 
         }
