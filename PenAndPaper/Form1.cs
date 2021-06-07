@@ -26,5 +26,10 @@ namespace Project_r_layeh
         {
 
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+         
+        }
     }
 }
