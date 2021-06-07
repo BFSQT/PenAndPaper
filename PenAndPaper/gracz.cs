@@ -77,6 +77,7 @@ namespace Project_r_layeh
             tab_umiejetnosci[um1] = 1;
             tab_umiejetnosci[um2] = 1;
             tab_umiejetnosci[um3] = 1;
+
         }
 
         public int Sprawdzenie_umiejetnosci(int stat, int umj)

@@ -15,7 +15,7 @@ namespace Project_r_layeh
         gracz Roman = new gracz();
         int Wynik = 0;
         int currentMyComboBoxIndex=0;
-        int currentMyComboBoxIndex2 = 0;
+        int currentMyComboBoxIndex2 = 23;
         public Form1()
         {
             InitializeComponent();
@@ -252,6 +252,7 @@ namespace Project_r_layeh
             if (currentMyComboBoxIndex2 == 20)
             {
                 Statystyka = Roman.at_ww;
+
             }
             if (currentMyComboBoxIndex2 == 21)
             {
@@ -260,30 +261,38 @@ namespace Project_r_layeh
             if (currentMyComboBoxIndex2 == 3 || currentMyComboBoxIndex2 == 11 || currentMyComboBoxIndex2 == 15)
             {
                 Statystyka = Roman.at_zr;
-             
+                Statystyka = Roman.Sprawdzenie_umiejetnosci(Statystyka, currentMyComboBoxIndex2);
+
             }
             if (currentMyComboBoxIndex2 == 5 || currentMyComboBoxIndex2 == 10 || currentMyComboBoxIndex2 == 12 || currentMyComboBoxIndex2 == 13 || currentMyComboBoxIndex2 == 18)
             {
                 Statystyka = Roman.at_int;
+                Statystyka = Roman.Sprawdzenie_umiejetnosci(Statystyka,currentMyComboBoxIndex2);
+
+
             }
             if (currentMyComboBoxIndex2 == 0 || currentMyComboBoxIndex2 == 1 || currentMyComboBoxIndex2 == 6 || currentMyComboBoxIndex2 == 9 || currentMyComboBoxIndex2 == 14)
             {
                 Statystyka = Roman.at_ogd;
+                Statystyka = Roman.Sprawdzenie_umiejetnosci(Statystyka, currentMyComboBoxIndex2);
 
             }
             if (currentMyComboBoxIndex2 == 7 || currentMyComboBoxIndex2 == 8 || currentMyComboBoxIndex2 == 16 || currentMyComboBoxIndex2 == 17 || currentMyComboBoxIndex2 == 19)
             {
                 Statystyka = Roman.at_k;
+                Statystyka = Roman.Sprawdzenie_umiejetnosci(Statystyka, currentMyComboBoxIndex2);
 
             }
             if (currentMyComboBoxIndex2 == 22)
             {
                 Statystyka = Roman.at_sw;
+
             }
             if (currentMyComboBoxIndex2 == 4)
             {
                 Statystyka = Roman.At_odp();
-                                                                                                                                                
+                Statystyka = Roman.Sprawdzenie_umiejetnosci(Statystyka, currentMyComboBoxIndex2);
+
             }
 
 
@@ -332,18 +341,24 @@ namespace Project_r_layeh
         {
             
             currentMyComboBoxIndex = comboBox1.SelectedIndex;
+
             
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             Roman.Ustaw_atrybuty("Roman", 11, 3, 41, 33, 36, 37, 34, 28, 44,37);
+            Roman.Startowe_umiejetnosci();
 
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
             currentMyComboBoxIndex2 = comboBox2.SelectedIndex;
+
+
         }
+
+
     }
 }
