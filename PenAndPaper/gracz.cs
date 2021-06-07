@@ -8,8 +8,6 @@ namespace Project_r_layeh
 {
     public class gracz: postac
     {
-        //nazwa postaci - atrybut
-        public string nazwa { get; protected set; }
         //statystyki - atrybuty
         public int at_ww { get; protected set; } //walka wrecz
         public int at_us { get; protected set; } //umiejetnosci strzeleckie
@@ -31,21 +29,7 @@ namespace Project_r_layeh
             at_ogd = 0;
         }
 
-        public gracz(int at1, int at2, int at3, int at4, int at5, int at6, int at7, int at8, int at9)
-        {
-            at_zyw = at1;
-            at_s = at2;
-            at_ww = at3;
-            at_us = at4;
-            at_k = at5;
-            at_zr = at6;
-            at_int = at7;
-            at_sw = at8;
-            at_ogd = at9;
-        }
-
-        //metody
-        public void Ustaw_atrybuty(string nz, int at1, int at2, int at3, int at4, int at5, int at6, int at7, int at8, int at9)
+        public gracz(string nz, int at1, int at2, int at3, int at4, int at5, int at6, int at7, int at8, int at9, int at10)
         {
             nazwa = nz;
             at_zyw = at1;
@@ -57,6 +41,33 @@ namespace Project_r_layeh
             at_int = at7;
             at_sw = at8;
             at_ogd = at9;
+            at_odp = at10;
+
+            for (int i = 0; i < 20; i++)
+            {
+                tab_umiejetnosci[i] = 0;
+            }
+        }
+
+        //metody
+        public void Ustaw_atrybuty(string nz, int at1, int at2, int at3, int at4, int at5, int at6, int at7, int at8, int at9, int at10)
+        {
+            nazwa = nz;
+            at_zyw = at1;
+            at_s = at2;
+            at_ww = at3;
+            at_us = at4;
+            at_k = at5;
+            at_zr = at6;
+            at_int = at7;
+            at_sw = at8;
+            at_ogd = at9;
+            at_odp = at10;
+        }
+
+        public void Startowe_umiejetnosci()
+        {
+            
         }
     }
 }
