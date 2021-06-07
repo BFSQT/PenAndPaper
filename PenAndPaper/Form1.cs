@@ -21,10 +21,160 @@ namespace Project_r_layeh
         {
 
         }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        bool changed = false;
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-         
+            if (!changed)
+            {
+                if (checkBox2.Checked)
+                {
+                    changed = true;
+                    checkBox2.Checked = false;
+                }
+                if (checkBox3.Checked)
+                {
+                    changed = true;
+                    checkBox3.Checked = false;
+                }
+                if (checkBox4.Checked)
+                {
+                    changed = true;
+                    checkBox4.Checked = false;
+                }
+                if (checkBox5.Checked)
+                {
+                    changed = true;
+                    checkBox5.Checked = false;
+                }
+            }
+            else
+            {
+                changed = false;
+            }
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (!changed)
+            {
+                if (checkBox1.Checked)
+                {
+                    changed = true;
+                    checkBox1.Checked = false;
+                }
+                if (checkBox3.Checked)
+                {
+                    changed = true;
+                    checkBox3.Checked = false;
+                }
+                if (checkBox4.Checked)
+                {
+                    changed = true;
+                    checkBox4.Checked = false;
+                }
+                if (checkBox5.Checked)
+                {
+                    changed = true;
+                    checkBox5.Checked = false;
+                }
+            }
+            else
+            {
+                changed = false;
+            }
+        }
+
+        private void checkBox3_CheckedChanged(object sender, EventArgs e)
+        {
+            if (!changed)
+            {
+                if (checkBox1.Checked)
+                {
+                    changed = true;
+                    checkBox1.Checked = false;
+                }
+                if (checkBox2.Checked)
+                {
+                    changed = true;
+                    checkBox2.Checked = false;
+                }
+                if (checkBox4.Checked)
+                {
+                    changed = true;
+                    checkBox4.Checked = false;
+                }
+                if (checkBox5.Checked)
+                {
+                    changed = true;
+                    checkBox5.Checked = false;
+                }
+            }
+            else
+            {
+                changed = false;
+            }
+        }
+
+        private void checkBox4_CheckedChanged(object sender, EventArgs e)
+        {
+            if (!changed)
+            {
+                if (checkBox1.Checked)
+                {
+                    changed = true;
+                    checkBox1.Checked = false;
+                }
+                if (checkBox2.Checked)
+                {
+                    changed = true;
+                    checkBox2.Checked = false;
+                }
+                if (checkBox3.Checked)
+                {
+                    changed = true;
+                    checkBox3.Checked = false;
+                }
+                if (checkBox5.Checked)
+                {
+                    changed = true;
+                    checkBox5.Checked = false;
+                }
+            }
+            else
+            {
+                changed = false;
+            }
+        }
+
+        private void checkBox5_CheckedChanged(object sender, EventArgs e)
+        {
+            if (!changed)
+            {
+                if (checkBox1.Checked)
+                {
+                    changed = true;
+                    checkBox1.Checked = false;
+                }
+                if (checkBox2.Checked)
+                {
+                    changed = true;
+                    checkBox2.Checked = false;
+                }
+                if (checkBox4.Checked)
+                {
+                    changed = true;
+                    checkBox4.Checked = false;
+                }
+                if (checkBox3.Checked)
+                {
+                    changed = true;
+                    checkBox3.Checked = false;
+                }
+            }
+            else
+            {
+                changed = false;
+            }
         }
     }
 }
