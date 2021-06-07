@@ -16,5 +16,10 @@ namespace Project_r_layeh
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

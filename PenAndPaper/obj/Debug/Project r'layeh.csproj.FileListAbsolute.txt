@@ -8,3 +8,13 @@ C:\Users\Lipski\source\repos\Project r'layeh\obj\Debug\Project r'layeh.csproj.Ge
 C:\Users\Lipski\source\repos\Project r'layeh\obj\Debug\Project r'layeh.csproj.CoreCompileInputs.cache
 C:\Users\Lipski\source\repos\Project r'layeh\obj\Debug\Project r'layeh.exe
 C:\Users\Lipski\source\repos\Project r'layeh\obj\Debug\Project r'layeh.pdb
+C:\Users\Lipski\Desktop\uczelnia\io lab\PenAndPaper-main\PenAndPaper\PenAndPaper\bin\Debug\Project r'layeh.exe.config
+C:\Users\Lipski\Desktop\uczelnia\io lab\PenAndPaper-main\PenAndPaper\PenAndPaper\bin\Debug\Project r'layeh.exe
+C:\Users\Lipski\Desktop\uczelnia\io lab\PenAndPaper-main\PenAndPaper\PenAndPaper\bin\Debug\Project r'layeh.pdb
+C:\Users\Lipski\Desktop\uczelnia\io lab\PenAndPaper-main\PenAndPaper\PenAndPaper\obj\Debug\Project r'layeh.csprojAssemblyReference.cache
+C:\Users\Lipski\Desktop\uczelnia\io lab\PenAndPaper-main\PenAndPaper\PenAndPaper\obj\Debug\Project_r_layeh.Form1.resources
+C:\Users\Lipski\Desktop\uczelnia\io lab\PenAndPaper-main\PenAndPaper\PenAndPaper\obj\Debug\Project_r_layeh.Properties.Resources.resources
+C:\Users\Lipski\Desktop\uczelnia\io lab\PenAndPaper-main\PenAndPaper\PenAndPaper\obj\Debug\Project r'layeh.csproj.GenerateResource.cache
+C:\Users\Lipski\Desktop\uczelnia\io lab\PenAndPaper-main\PenAndPaper\PenAndPaper\obj\Debug\Project r'layeh.csproj.CoreCompileInputs.cache
+C:\Users\Lipski\Desktop\uczelnia\io lab\PenAndPaper-main\PenAndPaper\PenAndPaper\obj\Debug\Project r'layeh.exe
+C:\Users\Lipski\Desktop\uczelnia\io lab\PenAndPaper-main\PenAndPaper\PenAndPaper\obj\Debug\Project r'layeh.pdb
