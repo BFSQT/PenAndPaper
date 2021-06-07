@@ -271,7 +271,7 @@ namespace Project_r_layeh
             if (currentMyComboBoxIndex2 == 7 || currentMyComboBoxIndex2 == 8 || currentMyComboBoxIndex2 == 16 || currentMyComboBoxIndex2 == 17 || currentMyComboBoxIndex2 == 19)
             {
                 Statystyka = Roman.at_k;
-                MessageBox.Show("ZASTRASZANIE");
+
             }
             if (currentMyComboBoxIndex2 == 22)
             {
