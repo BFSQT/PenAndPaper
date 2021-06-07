@@ -16,5 +16,10 @@ namespace Project_r_layeh
         {
             InitializeComponent();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
