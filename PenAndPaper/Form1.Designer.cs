@@ -47,7 +47,7 @@ namespace Project_r_layeh
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button3.Location = new System.Drawing.Point(16, 377);
+            this.button3.Location = new System.Drawing.Point(63, 377);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(155, 51);
             this.button3.TabIndex = 4;

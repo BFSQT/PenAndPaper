@@ -16,15 +16,17 @@ namespace Project_r_layeh
         public Form1()
         {
             InitializeComponent();
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            checkBox3.Checked = true;
         }
         bool changed = false;
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
+
             if (!changed)
             {
                 if (checkBox2.Checked)
@@ -51,6 +53,7 @@ namespace Project_r_layeh
             else
             {
                 changed = false;
+                checkBox3.Checked = true;
             }
         }
 
@@ -82,6 +85,7 @@ namespace Project_r_layeh
             else
             {
                 changed = false;
+                checkBox3.Checked = true;
             }
         }
 
@@ -113,6 +117,7 @@ namespace Project_r_layeh
             else
             {
                 changed = false;
+                checkBox3.Checked = true;
             }
         }
 
@@ -144,6 +149,7 @@ namespace Project_r_layeh
             else
             {
                 changed = false;
+                checkBox3.Checked = true;
             }
         }
 
@@ -175,6 +181,7 @@ namespace Project_r_layeh
             else
             {
                 changed = false;
+                checkBox3.Checked = true;
             }
         }
 
