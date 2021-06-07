@@ -257,6 +257,7 @@ namespace Project_r_layeh
             if (currentMyComboBoxIndex2 == 3 || currentMyComboBoxIndex2 == 11 || currentMyComboBoxIndex2 == 15)
             {
                 Statystyka = Roman.at_zr;
+             
             }
             if (currentMyComboBoxIndex2 == 5 || currentMyComboBoxIndex2 == 10 || currentMyComboBoxIndex2 == 12 || currentMyComboBoxIndex2 == 13 || currentMyComboBoxIndex2 == 18)
             {
@@ -265,10 +266,12 @@ namespace Project_r_layeh
             if (currentMyComboBoxIndex2 == 0 || currentMyComboBoxIndex2 == 1 || currentMyComboBoxIndex2 == 6 || currentMyComboBoxIndex2 == 9 || currentMyComboBoxIndex2 == 14)
             {
                 Statystyka = Roman.at_ogd;
+
             }
             if (currentMyComboBoxIndex2 == 7 || currentMyComboBoxIndex2 == 8 || currentMyComboBoxIndex2 == 16 || currentMyComboBoxIndex2 == 17 || currentMyComboBoxIndex2 == 19)
             {
                 Statystyka = Roman.at_k;
+
             }
             if (currentMyComboBoxIndex2 == 22)
             {
@@ -276,7 +279,8 @@ namespace Project_r_layeh
             }
             if (currentMyComboBoxIndex2 == 4)
             {
-                Statystyka = Roman.at_odp;
+                Statystyka = Roman.At_odp();
+                                                                                                                                                
             }
 
             if (checkBox1.Checked)
@@ -319,7 +323,7 @@ namespace Project_r_layeh
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Roman.Ustaw_atrybuty("Roman", 11, 3, 41, 33, 36, 37, 34, 28, 44);
+            Roman.Ustaw_atrybuty("Roman", 11, 3, 41, 33, 36, 37, 34, 28, 44,37);
 
         }
 
