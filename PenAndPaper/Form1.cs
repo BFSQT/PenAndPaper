@@ -246,33 +246,37 @@ namespace Project_r_layeh
 
 //##################### Wybieranie statystyki ##############################
 
-            if (currentMyComboBoxIndex2 == 21)
+            if (currentMyComboBoxIndex2 == 20)
             {
                 Statystyka = Roman.at_ww;
             }
-            if (currentMyComboBoxIndex2 == 22)
+            if (currentMyComboBoxIndex2 == 21)
             {
                 Statystyka = Roman.at_us;
             }
-            if (currentMyComboBoxIndex2 == 3)
+            if (currentMyComboBoxIndex2 == 3 || currentMyComboBoxIndex2 == 11 || currentMyComboBoxIndex2 == 15)
             {
                 Statystyka = Roman.at_zr;
             }
-            if (currentMyComboBoxIndex2 == 3)
+            if (currentMyComboBoxIndex2 == 5 || currentMyComboBoxIndex2 == 10 || currentMyComboBoxIndex2 == 12 || currentMyComboBoxIndex2 == 13 || currentMyComboBoxIndex2 == 18)
             {
                 Statystyka = Roman.at_int;
             }
-            if (currentMyComboBoxIndex2 == 1 || currentMyComboBoxIndex2 == 2)
+            if (currentMyComboBoxIndex2 == 0 || currentMyComboBoxIndex2 == 1 || currentMyComboBoxIndex2 == 6 || currentMyComboBoxIndex2 == 9 || currentMyComboBoxIndex2 == 14)
             {
                 Statystyka = Roman.at_ogd;
             }
-            if (currentMyComboBoxIndex2 == 6 )
+            if (currentMyComboBoxIndex2 == 7 || currentMyComboBoxIndex2 == 8 || currentMyComboBoxIndex2 == 16 || currentMyComboBoxIndex2 == 17 || currentMyComboBoxIndex2 == 19)
             {
                 Statystyka = Roman.at_k;
             }
-            if (currentMyComboBoxIndex2 == 7)
+            if (currentMyComboBoxIndex2 == 22)
             {
                 Statystyka = Roman.at_sw;
+            }
+            if (currentMyComboBoxIndex2 == 4)
+            {
+                Statystyka = Roman.at_odp;
             }
 
             if (checkBox1.Checked)
