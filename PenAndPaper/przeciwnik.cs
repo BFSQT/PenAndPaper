@@ -35,6 +35,11 @@ namespace Project_r_layeh
             at_odp = at5;
             typ_bron = typ;
             obr_bron = br;
+
+            for (int i = 0; i < 20; i++)
+            {
+                tab_umiejetnosci[i] = 0;
+            }
         }
 
     }
