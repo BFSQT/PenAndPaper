@@ -190,6 +190,7 @@ namespace Project_r_layeh
             "Zastraszanie",
             "Walka Wręcz",
             "Umiejętności Strzeleckie",
+            "Siła Woli",
             "<Brak>"});
             this.comboBox2.Location = new System.Drawing.Point(12, 83);
             this.comboBox2.Name = "comboBox2";
