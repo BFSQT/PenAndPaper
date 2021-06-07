@@ -79,6 +79,31 @@ namespace Project_r_layeh
             tab_umiejetnosci[um3] = 1;
         }
 
+        public int Sprawdzenie_umiejetnosci(int stat, int umj)
+        {
+            //poprawienie szansy rzutu na podstawie posiadanej umiejetnosci
+            if (tab_umiejetnosci[umj] == 0)
+            {
+                double temp1 = stat;
+                double temp2 = 0;
+                temp2 = Math.Round(temp1 / 2);
+                stat = Convert.ToInt32(temp2);
+            }
+            else if (tab_umiejetnosci[umj] == 2)
+            {
+                stat += 10;
+            }
+            else if (tab_umiejetnosci[umj] == 3)
+            {
+                stat += 20;
+            }
+            else 
+            {
+            }
+
+            return stat;
+        }
+
         public int At_odp()
         {
             //pozyskanie wartosci atrybutu odp z klasy abstrakcyjnej
