@@ -13,6 +13,7 @@ namespace Project_r_layeh
     public partial class Form1 : Form
     {
         int Wynik = 0;
+        int currentMyComboBoxIndex=0;
         public Form1()
         {
             InitializeComponent();
@@ -24,6 +25,7 @@ namespace Project_r_layeh
             checkBox3.Checked = true;
         }
         bool changed = false;
+
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
 
@@ -203,26 +205,69 @@ namespace Project_r_layeh
 
         private void button3_Click(object sender, EventArgs e)
         {
+            Random rand = new Random();
+            if (currentMyComboBoxIndex == 0)
+            {
+                Wynik = rand.Next(0);
+            }
+            if (currentMyComboBoxIndex == 1)
+            {
+                Wynik = rand.Next(1,3);
+            }
+            if (currentMyComboBoxIndex == 2)
+            {
+                Wynik = rand.Next(1,5);
+                
+            }
+            if (currentMyComboBoxIndex == 3)
+            {
+                Wynik = rand.Next(1,7);
+            }
+            if (currentMyComboBoxIndex == 4)
+            {
+                Wynik = rand.Next(1,11);
+            }
+            if (currentMyComboBoxIndex == 5)
+            {
+                Wynik = rand.Next(1,21);
+            }
+            if (currentMyComboBoxIndex == 6)
+            {
+                Wynik = rand.Next(1,51);
+            }
+            if (currentMyComboBoxIndex == 7)
+            {
+                Wynik = rand.Next(1,101);
+
+            }
             if (checkBox1.Checked)
             {
-                Wynik = +20;
+                Wynik +=20;
             }
             if (checkBox2.Checked)
             {
-                Wynik = +10;
+                Wynik += 10;
             }
             if (checkBox3.Checked)
             {
-                Wynik = +0;
+                Wynik += 0;
             }
             if (checkBox4.Checked)
             {
-                Wynik = -10;
+                Wynik -= 10;
             }
             if (checkBox5.Checked)
             {
-                Wynik = -20;
+                Wynik -= 20;
             }
+            MessageBox.Show("Wejszło albo nie " + Wynik.ToString());
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+            currentMyComboBoxIndex = comboBox1.SelectedIndex;
+            
         }
     }
 }
