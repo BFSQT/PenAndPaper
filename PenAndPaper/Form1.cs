@@ -50,10 +50,14 @@ namespace Project_r_layeh
                     checkBox5.Checked = false;
                 }
             }
+            if (!checkBox2.Checked && !checkBox1.Checked && !checkBox3.Checked && !checkBox4.Checked && !checkBox5.Checked) 
+            {
+                checkBox3.Checked = true;
+            }
             else
             {
                 changed = false;
-                checkBox3.Checked = true;
+
             }
         }
 
@@ -82,10 +86,13 @@ namespace Project_r_layeh
                     checkBox5.Checked = false;
                 }
             }
+            if (!checkBox2.Checked && !checkBox1.Checked && !checkBox3.Checked && !checkBox4.Checked && !checkBox5.Checked)
+            {
+                checkBox3.Checked = true;
+            }
             else
             {
                 changed = false;
-                checkBox3.Checked = true;
             }
         }
 
@@ -114,10 +121,13 @@ namespace Project_r_layeh
                     checkBox5.Checked = false;
                 }
             }
+            if (!checkBox2.Checked && !checkBox1.Checked && !checkBox3.Checked && !checkBox4.Checked && !checkBox5.Checked)
+            {
+                checkBox3.Checked = true;
+            }
             else
             {
                 changed = false;
-                checkBox3.Checked = true;
             }
         }
 
@@ -146,10 +156,13 @@ namespace Project_r_layeh
                     checkBox5.Checked = false;
                 }
             }
+            if (!checkBox2.Checked && !checkBox1.Checked && !checkBox3.Checked && !checkBox4.Checked && !checkBox5.Checked)
+            {
+                checkBox3.Checked = true;
+            }
             else
             {
                 changed = false;
-                checkBox3.Checked = true;
             }
         }
 
@@ -178,10 +191,13 @@ namespace Project_r_layeh
                     checkBox3.Checked = false;
                 }
             }
+            if (!checkBox2.Checked && !checkBox1.Checked && !checkBox3.Checked && !checkBox4.Checked && !checkBox5.Checked)
+            {
+                checkBox3.Checked = true;
+            }
             else
             {
                 changed = false;
-                checkBox3.Checked = true;
             }
         }
 
