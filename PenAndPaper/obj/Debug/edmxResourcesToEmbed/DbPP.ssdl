@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PPModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Konta">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Login" Type="nvarchar" MaxLength="15" />
+    <Property Name="Haslo" Type="nvarchar" MaxLength="20" />
+    <Property Name="Mail" Type="nvarchar" MaxLength="30" />
+    <Property Name="Nr_telefonu" Type="int" />
+    <Property Name="Rodzaj_konta" Type="nvarchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="statystyki_pokoju">
+    <Key>
+      <PropertyRef Name="Nr_rzutu" />
+    </Key>
+    <Property Name="Nr_rzutu" Type="int" Nullable="false" />
+    <Property Name="Id" Type="int" />
+    <Property Name="Rodzaj_konta" Type="nvarchar" MaxLength="10" />
+    <Property Name="Rzut_koscia" Type="int" />
+  </EntityType>
+  <EntityContainer Name="PPModelStoreContainer">
+    <EntitySet Name="Konta" EntityType="Self.Konta" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="statystyki_pokoju" EntityType="Self.statystyki_pokoju" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

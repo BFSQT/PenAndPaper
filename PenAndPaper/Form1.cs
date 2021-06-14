@@ -16,6 +16,9 @@ namespace Project_r_layeh
         int Wynik = 0;
         int currentMyComboBoxIndex=0;
         int currentMyComboBoxIndex2 = 23;
+        int Konto1_Id;
+        string Konto1_Rodzaj;
+
         public Form1()
         {
             InitializeComponent();
@@ -335,6 +338,24 @@ namespace Project_r_layeh
                 MessageBox.Show("Wynik to: " + Wynik.ToString());
             }
 
+            using (var context = new PPEntities())
+            {
+
+                var rows = context.statystyki_pokoju.ToList();
+                int len = rows.Count;
+                var row = new statystyki_pokoju();
+                row.Id = Konto1_Id;
+                if (len == 0)
+                    row.Nr_rzutu = 1;
+                else
+                    row.Nr_rzutu = rows[len-1].Nr_rzutu + 1;
+                row.Rodzaj_konta = Konto1_Rodzaj;
+                row.Rzut_koscia = Wynik;
+
+                context.statystyki_pokoju.Add(row);
+                context.SaveChanges();
+            }
+
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -349,6 +370,12 @@ namespace Project_r_layeh
         {
             Roman.Ustaw_atrybuty("Roman", 11, 3, 41, 33, 36, 37, 34, 28, 44,37);
             Roman.Startowe_umiejetnosci();
+            using (var context2 = new PPEntities())
+            {
+                var rows = context2.Konta.ToList();
+                Konto1_Id = rows[0].Id;
+                Konto1_Rodzaj = rows[0].Rodzaj_konta;
+            }
 
         }
 
@@ -359,6 +386,18 @@ namespace Project_r_layeh
 
         }
 
-
+        private void button2_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "";
+            using (var context2 = new PPEntities())
+            {
+                var rows = context2.statystyki_pokoju.ToList();
+                foreach (var row in rows)
+                {
+                    var text = row.Nr_rzutu.ToString()  + "  " + row.Id.ToString() + "  " + row.Rodzaj_konta + "  " + row.Rzut_koscia.ToString();
+                    textBox1.Text += text + Environment.NewLine;
+                }
+            }
+        }
     }
 }

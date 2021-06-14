@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="PPModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Konta">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Login" Type="nvarchar" MaxLength="15" />
+          <Property Name="Haslo" Type="nvarchar" MaxLength="20" />
+          <Property Name="Mail" Type="nvarchar" MaxLength="30" />
+          <Property Name="Nr_telefonu" Type="int" />
+          <Property Name="Rodzaj_konta" Type="nvarchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="statystyki_pokoju">
+          <Key>
+            <PropertyRef Name="Nr_rzutu" />
+          </Key>
+          <Property Name="Nr_rzutu" Type="int" Nullable="false" />
+          <Property Name="Id" Type="int" />
+          <Property Name="Rodzaj_konta" Type="nvarchar" MaxLength="10" />
+          <Property Name="Rzut_koscia" Type="int" />
+        </EntityType>
+        <EntityContainer Name="PPModelStoreContainer">
+          <EntitySet Name="Konta" EntityType="Self.Konta" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="statystyki_pokoju" EntityType="Self.statystyki_pokoju" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="PPModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Konta">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Login" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Name="Haslo" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Mail" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="Nr_telefonu" Type="Int32" />
+          <Property Name="Rodzaj_konta" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="statystyki_pokoju">
+          <Key>
+            <PropertyRef Name="Nr_rzutu" />
+          </Key>
+          <Property Name="Nr_rzutu" Type="Int32" Nullable="false" />
+          <Property Name="Id" Type="Int32" />
+          <Property Name="Rodzaj_konta" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="Rzut_koscia" Type="Int32" />
+        </EntityType>
+        <EntityContainer Name="PPEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Konta" EntityType="Self.Konta" />
+          <EntitySet Name="statystyki_pokoju" EntityType="Self.statystyki_pokoju" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="PPModelStoreContainer" CdmEntityContainer="PPEntities">
+          <EntitySetMapping Name="Konta">
+            <EntityTypeMapping TypeName="PPModel.Konta">
+              <MappingFragment StoreEntitySet="Konta">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Login" ColumnName="Login" />
+                <ScalarProperty Name="Haslo" ColumnName="Haslo" />
+                <ScalarProperty Name="Mail" ColumnName="Mail" />
+                <ScalarProperty Name="Nr_telefonu" ColumnName="Nr_telefonu" />
+                <ScalarProperty Name="Rodzaj_konta" ColumnName="Rodzaj_konta" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="statystyki_pokoju">
+            <EntityTypeMapping TypeName="PPModel.statystyki_pokoju">
+              <MappingFragment StoreEntitySet="statystyki_pokoju">
+                <ScalarProperty Name="Nr_rzutu" ColumnName="Nr_rzutu" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Rodzaj_konta" ColumnName="Rodzaj_konta" />
+                <ScalarProperty Name="Rzut_koscia" ColumnName="Rzut_koscia" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PPModelStoreContainer" CdmEntityContainer="PPEntities">
+    <EntitySetMapping Name="Konta">
+      <EntityTypeMapping TypeName="PPModel.Konta">
+        <MappingFragment StoreEntitySet="Konta">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Haslo" ColumnName="Haslo" />
+          <ScalarProperty Name="Mail" ColumnName="Mail" />
+          <ScalarProperty Name="Nr_telefonu" ColumnName="Nr_telefonu" />
+          <ScalarProperty Name="Rodzaj_konta" ColumnName="Rodzaj_konta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="statystyki_pokoju">
+      <EntityTypeMapping TypeName="PPModel.statystyki_pokoju">
+        <MappingFragment StoreEntitySet="statystyki_pokoju">
+          <ScalarProperty Name="Nr_rzutu" ColumnName="Nr_rzutu" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Rodzaj_konta" ColumnName="Rodzaj_konta" />
+          <ScalarProperty Name="Rzut_koscia" ColumnName="Rzut_koscia" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
