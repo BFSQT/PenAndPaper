@@ -14,10 +14,14 @@ namespace Project_r_layeh
     {
         gracz Roman = new gracz();
         int Wynik = 0;
+        int Wynik2 = 0;
         int currentMyComboBoxIndex=0;
         int currentMyComboBoxIndex2 = 23;
         int Konto1_Id;
         string Konto1_Rodzaj;
+        int Where = 0;
+        int dmg = 0;
+        int dmgdice = 0;
 
         public Form1()
         {
@@ -332,6 +336,49 @@ namespace Project_r_layeh
             else if (Wynik <= Statystyka)
             {
                 MessageBox.Show("Wejszło! Wynik to: " + Wynik.ToString());
+                if (currentMyComboBoxIndex2 == 20)
+                {
+                    do
+                    {
+                        Where = 0;
+                        dmgdice = rand.Next(1, 11);
+                        dmg = dmgdice + Roman.At_s();
+                        Wynik2 = Wynik;
+                        while (Wynik > 0)
+                        {
+                            Where = Where * 10 + Wynik2 % 10;
+                            Wynik2 = Wynik2 / 10;
+                        }
+                        if (Where <= 15)
+                        {
+                            MessageBox.Show("Trafiłeś przeciwnika w głowę i zadałeś mu " + dmg.ToString() + " Obrażeń");
+                        }
+                        if (Where > 15 && Where <= 35)
+                        {
+                            MessageBox.Show("Trafiłeś przeciwnika w prawą ręke i zadałeś mu " + dmg.ToString() + " Obrażeń");
+                        }
+                        if (Where > 35 && Where <= 55)
+                        {
+                            MessageBox.Show("Trafiłeś przeciwnika w lewą ręke i zadałeś mu " + dmg.ToString() + " Obrażeń");
+                        }
+                        if (Where > 55 && Where <= 80)
+                        {
+                            MessageBox.Show("Trafiłeś przeciwnika w korpus i zadałeś mu " + dmg.ToString() + " Obrażeń");
+                        }
+                        if (Where > 80 && Where <= 90)
+                        {
+                            MessageBox.Show("Trafiłeś przeciwnika w prawą nogę i zadałeś mu " + dmg.ToString() + " Obrażeń");
+                        }
+                        if (Where > 90)
+                        {
+                            MessageBox.Show("Trafiłeś przeciwnika w lewą nogę i zadałeś mu " + dmg.ToString() + " Obrażeń");
+                        }
+                        if (dmgdice == 10)
+                        {
+                            MessageBox.Show("Krytyczne obrażenia rzucasz jeszcze raz ");
+                        }
+                    } while (dmgdice == 10);
+                }
             }
             else 
             {
